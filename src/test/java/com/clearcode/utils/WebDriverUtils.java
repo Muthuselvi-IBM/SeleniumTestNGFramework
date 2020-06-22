@@ -1,5 +1,6 @@
 package com.clearcode.utils;
 
+import java.util.Iterator;
 import java.util.List;
 import java.util.Properties;
 import java.util.Set;
@@ -31,6 +32,7 @@ public class WebDriverUtils {
 	
 	WebDriver driver = null;
 	WebDriverWait wait = null;
+	JavascriptExecutor js;
 	Properties p;
 		public void initialize() {
 			String b=null;
@@ -246,6 +248,72 @@ public class WebDriverUtils {
 		
 		public void switchOut() {
 			driver.switchTo().defaultContent();
+		}
+		
+		public void enableCheckbox(By loc) {
+			WebElement e = find(loc);
+			if(!e.isSelected()) {
+				e.click();
+			}
+			ATUReports.add("Select RadioButton",loc.toString(), LogAs.PASSED, new CaptureScreen(
+                    ScreenshotOf.BROWSER_PAGE));
+		}
+		
+		public Boolean verifyElementOnPage(By loc) {
+			WebElement we = find(loc);
+			Boolean elementVisibleFlag = true;
+			if(we.isDisplayed() || we.isEnabled()) {
+				ATUReports.add("Verify Element on Page",loc.toString(), LogAs.PASSED, new CaptureScreen(
+	                    ScreenshotOf.BROWSER_PAGE));
+			}
+			else {
+				ATUReports.add("Verify Element on Page",loc.toString(), LogAs.FAILED, new CaptureScreen(
+	                    ScreenshotOf.BROWSER_PAGE));
+				elementVisibleFlag = false;
+			}
+			return elementVisibleFlag;
+		}
+		
+		public void scrollToPage(By loc) {
+			js = (JavascriptExecutor)driver;
+			WebElement locateElement = find(loc);
+			js.executeScript("arguments[0].scrollIntoView();", locateElement);
+			ATUReports.add("Scrolling till the element is visible", LogAs.PASSED, new CaptureScreen(
+					ScreenshotOf.BROWSER_PAGE));
+		}
+		
+		public Iterator<WebElement> findElements(By loc) {
+			List<WebElement> elements = driver.findElements(loc);
+			Iterator<WebElement> iter = elements.iterator();
+			
+			return iter;
+			
+		}
+		
+		public int getTextfromWebTable(By loc,String table_text) {
+			WebElement table = find(loc);
+			int row_no = 0;
+			String cell_text="";
+			List<WebElement> table_rows = table.findElements(By.tagName("tr"));
+			int rows_count = table_rows.size();
+			
+			outerloop:
+			for(int row=0;row<=rows_count;row++) {
+				List<WebElement> table_cols = table_rows.get(row).findElements(By.tagName("td"));
+				int cols_count = table_cols.size();
+				
+				for(int col=1;col<cols_count;col++) {
+				 cell_text = table_cols.get(col).getText();
+				 System.out.println(cell_text);
+					if(cell_text.contentEquals(table_text)) {
+						
+						 row_no = row;
+						 break outerloop;
+					 }
+				}
+			}
+			return row_no;
+			
 		}
 		
 		public void exit() {

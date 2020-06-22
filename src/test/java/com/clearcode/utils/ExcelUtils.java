@@ -78,7 +78,7 @@ public class ExcelUtils {
 	public static Object[][] getData(String book, String sheet, int rowCount) {
 		File f = new File("src/test/resources/data/"+book);
 		Workbook wb=null;
-		if(f.getName().endsWith("xls"))
+		if(f.getName().endsWith("xls") || f.getName().endsWith("xlsx"))
 		{
 			try {
 				wb = new HSSFWorkbook(new FileInputStream(f));

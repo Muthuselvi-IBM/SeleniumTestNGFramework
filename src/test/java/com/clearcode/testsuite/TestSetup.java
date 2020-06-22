@@ -1,8 +1,12 @@
 package com.clearcode.testsuite;
 
 import org.testng.annotations.AfterClass;
+import org.testng.annotations.AfterGroups;
+import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.BeforeGroups;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Listeners;
 
 import com.clearcode.utils.WebDriverUtils;
@@ -18,17 +22,18 @@ public class TestSetup {
         System.setProperty("atu.reporter.config", "src/test/resources/atu.properties");
     }
 	WebDriverUtils wdu = new WebDriverUtils();
-	@BeforeClass
+	@BeforeSuite
 	public void launch() {
 		wdu.initialize();
+		//wdu.launchUrl();
 	}
 	
-	@BeforeMethod
-	public void loadUrl() {
-		wdu.launchUrl();
-	}
+	//@BeforeMethod
+	//public void loadUrl() {
+		//wdu.launchUrl();
+	//}
 	
-	@AfterClass
+	@AfterSuite
 	public void close() {
 		//wdu.exit();
 	}

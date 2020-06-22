@@ -6,20 +6,19 @@ import com.clearcode.utils.ExcelUtils;
 public class LoginData {
 	int a=2;
 	@DataProvider
-	public Object[][] negativeLogin(){
-		return ExcelUtils.getData("TestData.xls", "NegativeLogin");
+	public Object[][] loginUser(){
+		
+		return ExcelUtils.getData("TestData.xls", "loginUser");
 	}
 	
 	@DataProvider
-	public Object[][] CreatePatient(){
-		return new Object[][] { 
-			new Object[] {
-			ExcelUtils.data("SuiteData.xls", "Sheet1", "createPatient").toArray() }
-			};
+	public Object[][] ReturnOrder(){
+		return ExcelUtils.getData("SuiteData.xls", "Sheet1");
 	}
 	
 	@DataProvider
-	public Object[][] SearchPatient(){
-		return new Object[][] { ExcelUtils.data("SuiteData.xls", "Sheet1", "searchPatient").toArray() };
+	public Object[][] AddProduct(){
+		return ExcelUtils.getData("AddProduct.xls", "AddProduct");
+		//return new Object[][] { ExcelUtils.data("AddProduct.xls", "AddProduct", "AddProduct").toArray() };
 	}
 }
