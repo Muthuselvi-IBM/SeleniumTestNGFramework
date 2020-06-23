@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,7 +38,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-Suite">
-              <span class="suite-name border-failed">Suite</span>
+              <span class="suite-name border-passed">Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -91,21 +91,36 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method, 1 failed,   </span>
+                    <span class="method-stats">4 methods,   4 passed</span>
                   </li>
                   <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
-                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods passed suite-Suite"> (hide)</a> <!-- hide-methods passed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods passed suite-Suite"> (show)</a> <!-- show-methods passed suite-Suite -->
                     </span>
-                    <div class="method-list-content failed suite-Suite">
+                    <div class="method-list-content passed suite-Suite">
                       <span>
-                        <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.clearcode.testsuite.AdminModifyOrder" hash-for-method="AddProduct">AddProduct</a> <!-- method navigator-link -->
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.clearcode.testsuite.AdminModifyOrder" hash-for-method="AddProduct(Test Data 1, 1, Brown T shirt, 4)">AddProduct(Test Data 1, 1, Brown T shirt, 4)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content failed suite-Suite -->
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.clearcode.testsuite.AdminModifyOrder" hash-for-method="AddProduct(Test Data 3, 3, White Socks, 3)">AddProduct(Test Data 3, 3, White Socks, 3)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.clearcode.testsuite.AdminModifyOrder" hash-for-method="AddProduct(Test Data 2, 2, Blazer Girls(II-V), 5)">AddProduct(Test Data 2, 2, Blazer Girls(II-V), 5)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.clearcode.testsuite.AdminModifyOrder" hash-for-method="AddProduct(Test Data 4, 4, White Shirt, 2)">AddProduct(Test Data 4, 4, White Shirt, 2)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Suite -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -117,29 +132,46 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite" class="panel Suite">
-          <div class="suite-Suite-class-failed">
+          <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
+              <img src="passed.png"/>
               <span class="class-name">com.clearcode.testsuite.AdminModifyOrder</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="AddProduct">
-                  </a> <!-- AddProduct -->
+                  <a name="AddProduct(Test Data 1, 1, Brown T shirt, 4)">
+                  </a> <!-- AddProduct(Test Data 1, 1, Brown T shirt, 4) -->
                   <span class="method-name">AddProduct</span>
-                  <div class="stack-trace">org.testng.internal.reflect.MethodMatcherException: 
-[public void com.clearcode.testsuite.AdminModifyOrder.AddProduct(java.lang.String,java.lang.String,java.lang.String,java.lang.String)] has no parameters defined but was found to be using a data provider (either explicitly specified or inherited from class level annotation).
-Data provider mismatch
-Method: AddProduct([Parameter{index=0, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=1, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=2, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=3, type=java.lang.String, declaredAnnotations=[]}])
-Arguments: [(java.lang.String) Test Data 1,(java.lang.String) 1,(java.lang.String) Brown T shirt,(java.lang.String) 4,(java.lang.String) ]
-	at java.util.ArrayList.forEach(Unknown Source)
-... Removed 22 stack frames
-</div> <!-- stack-trace -->
+                  <span class="parameters">(Test Data 1, 1, Brown T shirt, 4)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="AddProduct(Test Data 3, 3, White Socks, 3)">
+                  </a> <!-- AddProduct(Test Data 3, 3, White Socks, 3) -->
+                  <span class="method-name">AddProduct</span>
+                  <span class="parameters">(Test Data 3, 3, White Socks, 3)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="AddProduct(Test Data 2, 2, Blazer Girls(II-V), 5)">
+                  </a> <!-- AddProduct(Test Data 2, 2, Blazer Girls(II-V), 5) -->
+                  <span class="method-name">AddProduct</span>
+                  <span class="parameters">(Test Data 2, 2, Blazer Girls(II-V), 5)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="AddProduct(Test Data 4, 4, White Shirt, 2)">
+                  </a> <!-- AddProduct(Test Data 4, 4, White Shirt, 2) -->
+                  <span class="method-name">AddProduct</span>
+                  <span class="parameters">(Test Data 4, 4, White Shirt, 2)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-failed -->
+          </div> <!-- suite-Suite-class-passed -->
         </div> <!-- panel Suite -->
         <div panel-name="test-xml-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
@@ -195,16 +227,28 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(1);
+data.addRows(4);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'AddProduct')
 data.setCell(0, 2, 'com.clearcode.testsuite.AdminModifyOrder')
-data.setCell(0, 3, 289);
+data.setCell(0, 3, 2803);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'AddProduct')
+data.setCell(1, 2, 'com.clearcode.testsuite.AdminModifyOrder')
+data.setCell(1, 3, 2543);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'AddProduct')
+data.setCell(2, 2, 'com.clearcode.testsuite.AdminModifyOrder')
+data.setCell(2, 3, 2467);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'AddProduct')
+data.setCell(3, 2, 'com.clearcode.testsuite.AdminModifyOrder')
+data.setCell(3, 3, 2422);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 289 ms</span>
+              <span class="suite-total-time">Total running time: 10 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -215,6 +259,46 @@ return data;
             <span class="header-content">Reporter output for Suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">AddProduct(Test Data 1, 1, Brown T shirt, 4)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">STEP18</span>
+                <span class="reporter-method-output">STEP19</span>
+                <span class="reporter-method-output">STEP20</span>
+                <span class="reporter-method-output">STEP21</span>
+                <span class="reporter-method-output">STEP22</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">AddProduct(Test Data 3, 3, White Socks, 3)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">STEP28</span>
+                <span class="reporter-method-output">STEP29</span>
+                <span class="reporter-method-output">STEP30</span>
+                <span class="reporter-method-output">STEP31</span>
+                <span class="reporter-method-output">STEP32</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">AddProduct(Test Data 2, 2, Blazer Girls(II-V), 5)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">STEP23</span>
+                <span class="reporter-method-output">STEP24</span>
+                <span class="reporter-method-output">STEP25</span>
+                <span class="reporter-method-output">STEP26</span>
+                <span class="reporter-method-output">STEP27</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">AddProduct(Test Data 4, 4, White Shirt, 2)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">STEP33</span>
+                <span class="reporter-method-output">STEP34</span>
+                <span class="reporter-method-output">STEP35</span>
+                <span class="reporter-method-output">STEP36</span>
+                <span class="reporter-method-output">STEP37</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Suite" class="panel">
@@ -235,9 +319,35 @@ return data;
                 <span class="method-name">launch</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-suite before -->
+              <div class="configuration-test before">
+                <span class="method-name">login_admin(http://uniformm1.upskills.in/admin/, admin, admin@123)</span>
+                <span class="method-start">6873 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="test-method">
+                <span class="method-name">AddProduct(Test Data 1, 1, Brown T shirt, 4)</span>
+                <span class="method-start">26949 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">AddProduct(Test Data 2, 2, Blazer Girls(II-V), 5)</span>
+                <span class="method-start">29755 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">AddProduct(Test Data 3, 3, White Socks, 3)</span>
+                <span class="method-start">32299 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">AddProduct(Test Data 4, 4, White Shirt, 2)</span>
+                <span class="method-start">34723 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-test after">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">saveProductModification</span>
+                <span class="method-start">37193 ms</span>
+              </div> <!-- configuration-test after -->
               <div class="configuration-suite after">
                 <span class="method-name">close</span>
-                <span class="method-start">7153 ms</span>
+                <span class="method-start">41298 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

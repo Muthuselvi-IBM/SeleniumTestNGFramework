@@ -1,12 +1,18 @@
 package com.clearcode.testsuite;
 
-import java.awt.List;
+
 import java.util.Iterator;
+import java.util.List;
 import java.util.Properties;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.Select;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
@@ -23,7 +29,7 @@ import dataProvider.LoginData;
 public class AdminModifyOrder extends TestSetup{
 	int row,col;
 	
-	@BeforeMethod
+	@BeforeTest
 	@Parameters({"admin_url","admin_uname","admin_pwd"})
 	public void login_admin(String admin_url,String admin_uname,String admin_pwd) {
 		wdu.navigate(admin_url);
@@ -83,11 +89,46 @@ public class AdminModifyOrder extends TestSetup{
 	public void AddProduct(String desc,String order,String prod_name,String quanity) {
 		if(wdu.verifyElementOnPage(AdminLoginPage.prod_name)) {
 			wdu.type(AdminLoginPage.prod_name, prod_name);
-			wdu.click(AdminLoginPage.prod_list);
+			
+			By prod_list = By.xpath("//li[1]/a[text()='"+prod_name+"']");
+			wdu.click(prod_list);
 			
 			wdu.type(AdminLoginPage.prod_quantity, quanity);
 			wdu.click(AdminLoginPage.add_prod_btn);
 		}
+	}
+	
+	@AfterTest
+	public void saveProductModification() {
+		wdu.click(AdminLoginPage.prod_continue);
+		wdu.click(AdminLoginPage.payment_continue);
+		wdu.click(AdminLoginPage.shipment_continue);
+		
+		WebDriver driver = wdu.driver();
+		//Select select_method = new Select(driver.findElement(By.id("input-shipping-method")));
+		
+		
+		WebElement select = driver.findElement(By.xpath("//optgroup[@label='Free Shipping']")); //input-shipping-method
+        List <WebElement> options = select.findElements(By.tagName("option"));
+        for(WebElement option : options)
+        {
+        		System.out.println(option.getText());
+                if(option.getText().equals("Free Shipping - ₹0"))
+                {
+                        option.click();
+                        //selected=true;
+                        break;
+                }
+        }        
+		
+		//wdu.selectByValue(AdminLoginPage.ship_method, "Free Shipping - ₹0");
+		wdu.click(AdminLoginPage.ship_method_Btn);
+		
+		wdu.click(AdminLoginPage.save_Btn);
+		
+		wdu.scrollToPage(AdminLoginPage.success_msg);
+		
+		wdu.assertText(AdminLoginPage.success_msg, "Success: You have modified orders!");
 	}
 
 }

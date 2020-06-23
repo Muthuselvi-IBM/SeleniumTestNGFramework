@@ -1,47 +1,403 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
+<testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
   <reporter-output>
     <line>
       <![CDATA[STEP1]]>
     </line>
+    <line>
+      <![CDATA[STEP2]]>
+    </line>
+    <line>
+      <![CDATA[STEP3]]>
+    </line>
+    <line>
+      <![CDATA[STEP4]]>
+    </line>
+    <line>
+      <![CDATA[STEP5]]>
+    </line>
+    <line>
+      <![CDATA[STEP6]]>
+    </line>
+    <line>
+      <![CDATA[STEP7]]>
+    </line>
+    <line>
+      <![CDATA[STEP8]]>
+    </line>
+    <line>
+      <![CDATA[STEP9]]>
+    </line>
+    <line>
+      <![CDATA[STEP10]]>
+    </line>
+    <line>
+      <![CDATA[STEP11]]>
+    </line>
+    <line>
+      <![CDATA[STEP12]]>
+    </line>
+    <line>
+      <![CDATA[STEP13]]>
+    </line>
+    <line>
+      <![CDATA[STEP14]]>
+    </line>
+    <line>
+      <![CDATA[STEP15]]>
+    </line>
+    <line>
+      <![CDATA[STEP16]]>
+    </line>
+    <line>
+      <![CDATA[STEP17]]>
+    </line>
+    <line>
+      <![CDATA[STEP18]]>
+    </line>
+    <line>
+      <![CDATA[STEP19]]>
+    </line>
+    <line>
+      <![CDATA[STEP20]]>
+    </line>
+    <line>
+      <![CDATA[STEP21]]>
+    </line>
+    <line>
+      <![CDATA[STEP22]]>
+    </line>
+    <line>
+      <![CDATA[STEP23]]>
+    </line>
+    <line>
+      <![CDATA[STEP24]]>
+    </line>
+    <line>
+      <![CDATA[STEP25]]>
+    </line>
+    <line>
+      <![CDATA[STEP26]]>
+    </line>
+    <line>
+      <![CDATA[STEP27]]>
+    </line>
+    <line>
+      <![CDATA[STEP28]]>
+    </line>
+    <line>
+      <![CDATA[STEP29]]>
+    </line>
+    <line>
+      <![CDATA[STEP30]]>
+    </line>
+    <line>
+      <![CDATA[STEP31]]>
+    </line>
+    <line>
+      <![CDATA[STEP32]]>
+    </line>
+    <line>
+      <![CDATA[STEP33]]>
+    </line>
+    <line>
+      <![CDATA[STEP34]]>
+    </line>
+    <line>
+      <![CDATA[STEP35]]>
+    </line>
+    <line>
+      <![CDATA[STEP36]]>
+    </line>
+    <line>
+      <![CDATA[STEP37]]>
+    </line>
+    <line>
+      <![CDATA[STEP38]]>
+    </line>
+    <line>
+      <![CDATA[STEP39]]>
+    </line>
+    <line>
+      <![CDATA[STEP40]]>
+    </line>
+    <line>
+      <![CDATA[STEP41]]>
+    </line>
+    <line>
+      <![CDATA[STEP42]]>
+    </line>
+    <line>
+      <![CDATA[STEP43]]>
+    </line>
+    <line>
+      <![CDATA[STEP44]]>
+    </line>
   </reporter-output>
-  <suite name="Suite" duration-ms="317" started-at="2020-06-22T17:26:44 IST" finished-at="2020-06-22T17:26:44 IST">
+  <suite name="Suite" duration-ms="34402" started-at="2020-06-23T09:33:48 IST" finished-at="2020-06-23T09:34:23 IST">
     <groups>
     </groups>
-    <test name="Test" duration-ms="317" started-at="2020-06-22T17:26:44 IST" finished-at="2020-06-22T17:26:44 IST">
+    <test name="Test" duration-ms="34402" started-at="2020-06-23T09:33:48 IST" finished-at="2020-06-23T09:34:23 IST">
       <class name="com.clearcode.testsuite.AdminModifyOrder">
-        <test-method status="PASS" signature="launch()[pri:0, instance:com.clearcode.testsuite.AdminModifyOrder@64729b1e]" name="launch" is-config="true" duration-ms="6811" started-at="2020-06-22T17:26:37 IST" finished-at="2020-06-22T17:26:44 IST">
+        <test-method status="PASS" signature="launch()[pri:0, instance:com.clearcode.testsuite.AdminModifyOrder@10bbd20a]" name="launch" is-config="true" duration-ms="6869" started-at="2020-06-23T09:33:41 IST" finished-at="2020-06-23T09:33:48 IST">
           <reporter-output>
             <line>
               <![CDATA[STEP1]]>
             </line>
           </reporter-output>
         </test-method> <!-- launch -->
-        <test-method status="FAIL" signature="AddProduct(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.clearcode.testsuite.AdminModifyOrder@64729b1e]" name="AddProduct" duration-ms="289" started-at="2020-06-22T17:26:44 IST" data-provider="AddProduct" finished-at="2020-06-22T17:26:44 IST">
-          <exception class="org.testng.internal.reflect.MethodMatcherException">
-            <message>
-              <![CDATA[
-[public void com.clearcode.testsuite.AdminModifyOrder.AddProduct(java.lang.String,java.lang.String,java.lang.String,java.lang.String)] has no parameters defined but was found to be using a data provider (either explicitly specified or inherited from class level annotation).
-Data provider mismatch
-Method: AddProduct([Parameter{index=0, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=1, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=2, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=3, type=java.lang.String, declaredAnnotations=[]}])
-Arguments: [(java.lang.String) Test Data 1,(java.lang.String) 1,(java.lang.String) Brown T shirt,(java.lang.String) 4,(java.lang.String) ]]]>
-            </message>
+        <test-method status="PASS" signature="login_admin(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.clearcode.testsuite.AdminModifyOrder@10bbd20a]" name="login_admin" is-config="true" duration-ms="19802" started-at="2020-06-23T09:33:48 IST" finished-at="2020-06-23T09:34:08 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[http://uniformm1.upskills.in/admin/]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[admin]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[admin@123]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[STEP2]]>
+            </line>
+            <line>
+              <![CDATA[STEP3]]>
+            </line>
+            <line>
+              <![CDATA[STEP4]]>
+            </line>
+            <line>
+              <![CDATA[STEP5]]>
+            </line>
+            <line>
+              <![CDATA[STEP6]]>
+            </line>
+            <line>
+              <![CDATA[STEP7]]>
+            </line>
+            <line>
+              <![CDATA[STEP8]]>
+            </line>
+            <line>
+              <![CDATA[STEP9]]>
+            </line>
+            <line>
+              <![CDATA[STEP10]]>
+            </line>
+            <line>
+              <![CDATA[STEP11]]>
+            </line>
+            <line>
+              <![CDATA[STEP12]]>
+            </line>
+            <line>
+              <![CDATA[STEP13]]>
+            </line>
+            <line>
+              <![CDATA[STEP14]]>
+            </line>
+            <line>
+              <![CDATA[STEP15]]>
+            </line>
+            <line>
+              <![CDATA[STEP16]]>
+            </line>
+            <line>
+              <![CDATA[STEP17]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- login_admin -->
+        <test-method status="PASS" signature="AddProduct(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.clearcode.testsuite.AdminModifyOrder@10bbd20a]" name="AddProduct" duration-ms="2803" started-at="2020-06-23T09:34:08 IST" data-provider="AddProduct" finished-at="2020-06-23T09:34:11 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Test Data 1]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Brown T shirt]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[4]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[STEP18]]>
+            </line>
+            <line>
+              <![CDATA[STEP19]]>
+            </line>
+            <line>
+              <![CDATA[STEP20]]>
+            </line>
+            <line>
+              <![CDATA[STEP21]]>
+            </line>
+            <line>
+              <![CDATA[STEP22]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- AddProduct -->
+        <test-method status="PASS" signature="AddProduct(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.clearcode.testsuite.AdminModifyOrder@10bbd20a]" name="AddProduct" duration-ms="2543" started-at="2020-06-23T09:34:11 IST" data-provider="AddProduct" finished-at="2020-06-23T09:34:14 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Test Data 2]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Blazer Girls(II-V)]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[5]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[STEP23]]>
+            </line>
+            <line>
+              <![CDATA[STEP24]]>
+            </line>
+            <line>
+              <![CDATA[STEP25]]>
+            </line>
+            <line>
+              <![CDATA[STEP26]]>
+            </line>
+            <line>
+              <![CDATA[STEP27]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- AddProduct -->
+        <test-method status="PASS" signature="AddProduct(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.clearcode.testsuite.AdminModifyOrder@10bbd20a]" name="AddProduct" duration-ms="2422" started-at="2020-06-23T09:34:14 IST" data-provider="AddProduct" finished-at="2020-06-23T09:34:16 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Test Data 3]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[3]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[White Socks]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[3]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[STEP28]]>
+            </line>
+            <line>
+              <![CDATA[STEP29]]>
+            </line>
+            <line>
+              <![CDATA[STEP30]]>
+            </line>
+            <line>
+              <![CDATA[STEP31]]>
+            </line>
+            <line>
+              <![CDATA[STEP32]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- AddProduct -->
+        <test-method status="PASS" signature="AddProduct(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.clearcode.testsuite.AdminModifyOrder@10bbd20a]" name="AddProduct" duration-ms="2467" started-at="2020-06-23T09:34:16 IST" data-provider="AddProduct" finished-at="2020-06-23T09:34:18 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Test Data 4]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[4]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[White Shirt]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[STEP33]]>
+            </line>
+            <line>
+              <![CDATA[STEP34]]>
+            </line>
+            <line>
+              <![CDATA[STEP35]]>
+            </line>
+            <line>
+              <![CDATA[STEP36]]>
+            </line>
+            <line>
+              <![CDATA[STEP37]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- AddProduct -->
+        <test-method status="FAIL" signature="saveProductModification()[pri:0, instance:com.clearcode.testsuite.AdminModifyOrder@10bbd20a]" name="saveProductModification" is-config="true" duration-ms="4076" started-at="2020-06-23T09:34:18 IST" finished-at="2020-06-23T09:34:23 IST">
+          <exception class="atu.testng.reports.exceptions.ATUReporterStepFailedException">
             <full-stacktrace>
-              <![CDATA[org.testng.internal.reflect.MethodMatcherException: 
-[public void com.clearcode.testsuite.AdminModifyOrder.AddProduct(java.lang.String,java.lang.String,java.lang.String,java.lang.String)] has no parameters defined but was found to be using a data provider (either explicitly specified or inherited from class level annotation).
-Data provider mismatch
-Method: AddProduct([Parameter{index=0, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=1, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=2, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=3, type=java.lang.String, declaredAnnotations=[]}])
-Arguments: [(java.lang.String) Test Data 1,(java.lang.String) 1,(java.lang.String) Brown T shirt,(java.lang.String) 4,(java.lang.String) ]
-at org.testng.internal.reflect.DataProviderMethodMatcher.getConformingArguments(DataProviderMethodMatcher.java:43)
-at org.testng.internal.Parameters.injectParameters(Parameters.java:925)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:34)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.util.ArrayList.forEach(Unknown Source)
-at org.testng.TestRunner.privateRun(TestRunner.java:770)
-at org.testng.TestRunner.run(TestRunner.java:591)
+              <![CDATA[[ATU Custom Reporter Step Failed Exception]
+at atu.testng.reports.ATUReports.stepFailureHandler(Unknown Source)
+at atu.testng.reports.ATUReports.add(Unknown Source)
+at com.clearcode.utils.WebDriverUtils.assertText(WebDriverUtils.java:175)
+at com.clearcode.testsuite.AdminModifyOrder.saveProductModification(AdminModifyOrder.java:131)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:340)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:294)
+at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:623)
+at org.testng.TestRunner.afterRun(TestRunner.java:853)
+at org.testng.TestRunner.run(TestRunner.java:594)
 at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
 at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
 at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
@@ -57,11 +413,32 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.testng.internal.reflect.MethodMatcherException -->
+          </exception> <!-- atu.testng.reports.exceptions.ATUReporterStepFailedException -->
           <reporter-output>
+            <line>
+              <![CDATA[STEP38]]>
+            </line>
+            <line>
+              <![CDATA[STEP39]]>
+            </line>
+            <line>
+              <![CDATA[STEP40]]>
+            </line>
+            <line>
+              <![CDATA[STEP41]]>
+            </line>
+            <line>
+              <![CDATA[STEP42]]>
+            </line>
+            <line>
+              <![CDATA[STEP43]]>
+            </line>
+            <line>
+              <![CDATA[STEP44]]>
+            </line>
           </reporter-output>
-        </test-method> <!-- AddProduct -->
-        <test-method status="PASS" signature="close()[pri:0, instance:com.clearcode.testsuite.AdminModifyOrder@64729b1e]" name="close" is-config="true" duration-ms="1" started-at="2020-06-22T17:26:44 IST" finished-at="2020-06-22T17:26:44 IST">
+        </test-method> <!-- saveProductModification -->
+        <test-method status="SKIP" signature="close()[pri:0, instance:com.clearcode.testsuite.AdminModifyOrder@10bbd20a]" name="close" is-config="true" duration-ms="-1592885063064" started-at="2020-06-23T09:34:23 IST" finished-at="1970-01-01T05:30:00 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- close -->

@@ -21,5 +21,14 @@ public class AdminLoginPage {
 	
 	public static By prod_quantity = By.id("input-quantity");
 	public static By add_prod_btn = By.id("button-product-add");
+	public static By prod_continue = By.id("button-cart");
+	public static By payment_continue = By.id("button-payment-address");
+	public static By shipment_continue = By.id("button-shipping-address");
 	
+	public static By ship_method = By.id("input-shipping-method");
+	public static By ship_method_Btn = By.id("button-shipping-method");
+	
+	public static By save_Btn = By.id("button-save");
+	
+	public static By success_msg = By.xpath("//div[@class='alert alert-success']");
 }

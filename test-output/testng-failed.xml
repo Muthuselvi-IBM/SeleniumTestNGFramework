@@ -11,6 +11,7 @@
           <include name="launch"/>
           <include name="close"/>
           <include name="login_admin"/>
+          <include name="saveProductModification"/>
           <include name="AddProduct"/>
         </methods>
       </class> <!-- com.clearcode.testsuite.AdminModifyOrder -->

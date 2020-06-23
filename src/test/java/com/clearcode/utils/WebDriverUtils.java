@@ -140,6 +140,10 @@ public class WebDriverUtils {
                     ScreenshotOf.BROWSER_PAGE));
 		}
 		
+		public WebDriver driver() {
+			return driver;
+		}
+		
 		public void mouseOver(By loc) {
 			Actions act = new Actions(driver);
 			act.moveToElement(find(loc)).perform();
