@@ -87,7 +87,7 @@ public class WebDriverUtils {
 		}
 		
 		public void navigate(String url) {
-			ATUReports.add("Navigate from "+driver.getCurrentUrl()+" to "+url, LogAs.INFO, new CaptureScreen(
+			ATUReports.add("Navigate  to "+url, LogAs.INFO, new CaptureScreen(
                     ScreenshotOf.BROWSER_PAGE));
 			driver.get(url);
 			ATUReports.add("Navigation",driver.getCurrentUrl() , LogAs.PASSED, new CaptureScreen(

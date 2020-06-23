@@ -2,19 +2,21 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
   <test thread-count="5" name="Test(failed)">
-    <parameter name="admin_uname" value="admin"/>
-    <parameter name="admin_url" value="http://uniformm1.upskills.in/admin/"/>
-    <parameter name="admin_pwd" value="admin@123"/>
+    <parameter name="password" value="muthuselvi"/>
+    <parameter name="user_url" value="http://uniformm1.upskills.in/"/>
+    <parameter name="username" value="rmselvi16@gmail.com"/>
+    <groups>
+      <run>
+        <include name="OrderProduct"/>
+      </run>
+    </groups>
     <classes>
-      <class name="com.clearcode.testsuite.AdminModifyOrder">
+      <class name="com.clearcode.testsuite.orderProduct">
         <methods>
-          <include name="launch"/>
-          <include name="close"/>
-          <include name="login_admin"/>
-          <include name="saveProductModification"/>
-          <include name="AddProduct"/>
+          <include name="returnProduct"/>
+          <include name="loginUser"/>
         </methods>
-      </class> <!-- com.clearcode.testsuite.AdminModifyOrder -->
+      </class> <!-- com.clearcode.testsuite.orderProduct -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

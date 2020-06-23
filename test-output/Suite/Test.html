@@ -55,13 +55,13 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>4/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>0/0/4</td>
 </tr><tr>
-<td>Started on:</td><td>Tue Jun 23 09:33:48 IST 2020</td>
+<td>Started on:</td><td>Tue Jun 23 12:14:08 IST 2020</td>
 </tr>
-<tr><td>Total time:</td><td>34 seconds (34402 ms)</td>
+<tr><td>Total time:</td><td>0 seconds (418 ms)</td>
 </tr><tr>
-<td>Included groups:</td><td></td>
+<td>Included groups:</td><td>OrderProduct </td>
 </tr><tr>
 <td>Excluded groups:</td><td></td>
 </tr>
@@ -75,31 +75,21 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.clearcode.testsuite.AdminModifyOrder.saveProductModification()'><b>saveProductModification</b><br>Test class: com.clearcode.testsuite.AdminModifyOrder<br/>
-<a href="#Output-990830650" onClick='toggleBox("Output-990830650", this, "Show output", "Hide output");'>Show output</a>
+<td title='com.clearcode.testsuite.orderProduct.loginUser()'><b>loginUser</b><br>Test class: com.clearcode.testsuite.orderProduct<br>Parameters: http://uniformm1.upskills.in/, rmselvi16@gmail.com, muthuselvi<br/>
+<a href="#Output-399534175" onClick='toggleBox("Output-399534175", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-990830650" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-990830650">
-STEP38<br/>
-STEP39<br/>
-STEP40<br/>
-STEP41<br/>
-STEP42<br/>
-STEP43<br/>
-STEP44<br/>
+<a href="#Output-399534175" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-399534175">
+STEP1<br/>
 </div>
 </td>
-<td><div><pre>[ATU Custom Reporter Step Failed Exception]
-	at atu.testng.reports.ATUReports.stepFailureHandler(Unknown Source)
-	at atu.testng.reports.ATUReports.add(Unknown Source)
-	at com.clearcode.utils.WebDriverUtils.assertText(WebDriverUtils.java:175)
-	at com.clearcode.testsuite.AdminModifyOrder.saveProductModification(AdminModifyOrder.java:131)
-... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace990830650", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace990830650'><pre>[ATU Custom Reporter Step Failed Exception]
-	at atu.testng.reports.ATUReports.stepFailureHandler(Unknown Source)
-	at atu.testng.reports.ATUReports.add(Unknown Source)
-	at com.clearcode.utils.WebDriverUtils.assertText(WebDriverUtils.java:175)
-	at com.clearcode.testsuite.AdminModifyOrder.saveProductModification(AdminModifyOrder.java:131)
+<td><div><pre>java.lang.NullPointerException
+	at com.clearcode.utils.WebDriverUtils.navigate(WebDriverUtils.java:92)
+	at com.clearcode.testsuite.orderProduct.loginUser(orderProduct.java:30)
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace399534175", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace399534175'><pre>java.lang.NullPointerException
+	at com.clearcode.utils.WebDriverUtils.navigate(WebDriverUtils.java:92)
+	at com.clearcode.testsuite.orderProduct.loginUser(orderProduct.java:30)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -109,8 +99,8 @@ STEP44<br/>
 	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:340)
 	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:294)
 	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:623)
-	at org.testng.TestRunner.afterRun(TestRunner.java:853)
-	at org.testng.TestRunner.run(TestRunner.java:594)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:613)
+	at org.testng.TestRunner.run(TestRunner.java:584)
 	at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
 	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
 	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
@@ -125,80 +115,160 @@ STEP44<br/>
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
-<td>4</td>
-<td>com.clearcode.testsuite.AdminModifyOrder@10bbd20a</td></tr>
+<td>0</td>
+<td>com.clearcode.testsuite.orderProduct@1f7030a6</td></tr>
 </table><p>
-<table width='100%' border='1' class='invocation-passed'>
-<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
 <td width="30%"><b>Exception</b></td>
 <td width="10%"><b>Time (seconds)</b></td>
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.clearcode.testsuite.AdminModifyOrder.AddProduct()'><b>AddProduct</b><br>Test class: com.clearcode.testsuite.AdminModifyOrder<br>Parameters: Test Data 1, 1, Brown T shirt, 4<br/>
-<a href="#Output-2108440536" onClick='toggleBox("Output-2108440536", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-2108440536" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-2108440536">
-STEP18<br/>
-STEP19<br/>
-STEP20<br/>
-STEP21<br/>
-STEP22<br/>
-</div>
-</td>
-<td></td>
-<td>2</td>
-<td>com.clearcode.testsuite.AdminModifyOrder@10bbd20a</td></tr>
+<td title='com.clearcode.testsuite.orderProduct.returnProduct()'><b>returnProduct</b><br>Test class: com.clearcode.testsuite.orderProduct</td>
+<td><div><pre>java.lang.NullPointerException
+	at com.clearcode.utils.WebDriverUtils.navigate(WebDriverUtils.java:92)
+	at com.clearcode.testsuite.orderProduct.loginUser(orderProduct.java:30)
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace275266973", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace275266973'><pre>java.lang.NullPointerException
+	at com.clearcode.utils.WebDriverUtils.navigate(WebDriverUtils.java:92)
+	at com.clearcode.testsuite.orderProduct.loginUser(orderProduct.java:30)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:340)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:294)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:623)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:613)
+	at org.testng.TestRunner.run(TestRunner.java:584)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+	at org.testng.TestNG.runSuites(TestNG.java:1032)
+	at org.testng.TestNG.run(TestNG.java:1000)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.clearcode.testsuite.orderProduct@1f7030a6</td></tr>
 <tr>
-<td title='com.clearcode.testsuite.AdminModifyOrder.AddProduct()'><b>AddProduct</b><br>Test class: com.clearcode.testsuite.AdminModifyOrder<br>Parameters: Test Data 2, 2, Blazer Girls(II-V), 5<br/>
-<a href="#Output-2057077925" onClick='toggleBox("Output-2057077925", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-2057077925" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-2057077925">
-STEP23<br/>
-STEP24<br/>
-STEP25<br/>
-STEP26<br/>
-STEP27<br/>
-</div>
-</td>
-<td></td>
-<td>2</td>
-<td>com.clearcode.testsuite.AdminModifyOrder@10bbd20a</td></tr>
+<td title='com.clearcode.testsuite.orderProduct.returnProduct()'><b>returnProduct</b><br>Test class: com.clearcode.testsuite.orderProduct</td>
+<td><div><pre>java.lang.NullPointerException
+	at com.clearcode.utils.WebDriverUtils.navigate(WebDriverUtils.java:92)
+	at com.clearcode.testsuite.orderProduct.loginUser(orderProduct.java:30)
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace580871917", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace580871917'><pre>java.lang.NullPointerException
+	at com.clearcode.utils.WebDriverUtils.navigate(WebDriverUtils.java:92)
+	at com.clearcode.testsuite.orderProduct.loginUser(orderProduct.java:30)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:340)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:294)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:623)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:613)
+	at org.testng.TestRunner.run(TestRunner.java:584)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+	at org.testng.TestNG.runSuites(TestNG.java:1032)
+	at org.testng.TestNG.run(TestNG.java:1000)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.clearcode.testsuite.orderProduct@1f7030a6</td></tr>
 <tr>
-<td title='com.clearcode.testsuite.AdminModifyOrder.AddProduct()'><b>AddProduct</b><br>Test class: com.clearcode.testsuite.AdminModifyOrder<br>Parameters: Test Data 3, 3, White Socks, 3<br/>
-<a href="#Output-1164699452" onClick='toggleBox("Output-1164699452", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-1164699452" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1164699452">
-STEP28<br/>
-STEP29<br/>
-STEP30<br/>
-STEP31<br/>
-STEP32<br/>
-</div>
-</td>
-<td></td>
-<td>2</td>
-<td>com.clearcode.testsuite.AdminModifyOrder@10bbd20a</td></tr>
+<td title='com.clearcode.testsuite.orderProduct.returnProduct()'><b>returnProduct</b><br>Test class: com.clearcode.testsuite.orderProduct</td>
+<td><div><pre>java.lang.NullPointerException
+	at com.clearcode.utils.WebDriverUtils.navigate(WebDriverUtils.java:92)
+	at com.clearcode.testsuite.orderProduct.loginUser(orderProduct.java:30)
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace823723302", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace823723302'><pre>java.lang.NullPointerException
+	at com.clearcode.utils.WebDriverUtils.navigate(WebDriverUtils.java:92)
+	at com.clearcode.testsuite.orderProduct.loginUser(orderProduct.java:30)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:340)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:294)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:623)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:613)
+	at org.testng.TestRunner.run(TestRunner.java:584)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+	at org.testng.TestNG.runSuites(TestNG.java:1032)
+	at org.testng.TestNG.run(TestNG.java:1000)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.clearcode.testsuite.orderProduct@1f7030a6</td></tr>
 <tr>
-<td title='com.clearcode.testsuite.AdminModifyOrder.AddProduct()'><b>AddProduct</b><br>Test class: com.clearcode.testsuite.AdminModifyOrder<br>Parameters: Test Data 4, 4, White Shirt, 2<br/>
-<a href="#Output-1457148583" onClick='toggleBox("Output-1457148583", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-1457148583" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1457148583">
-STEP33<br/>
-STEP34<br/>
-STEP35<br/>
-STEP36<br/>
-STEP37<br/>
-</div>
-</td>
-<td></td>
-<td>2</td>
-<td>com.clearcode.testsuite.AdminModifyOrder@10bbd20a</td></tr>
+<td title='com.clearcode.testsuite.orderProduct.returnProduct()'><b>returnProduct</b><br>Test class: com.clearcode.testsuite.orderProduct</td>
+<td><div><pre>java.lang.NullPointerException
+	at com.clearcode.utils.WebDriverUtils.navigate(WebDriverUtils.java:92)
+	at com.clearcode.testsuite.orderProduct.loginUser(orderProduct.java:30)
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1714078840", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1714078840'><pre>java.lang.NullPointerException
+	at com.clearcode.utils.WebDriverUtils.navigate(WebDriverUtils.java:92)
+	at com.clearcode.testsuite.orderProduct.loginUser(orderProduct.java:30)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:340)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:294)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:623)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:613)
+	at org.testng.TestRunner.run(TestRunner.java:584)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+	at org.testng.TestNG.runSuites(TestNG.java:1032)
+	at org.testng.TestNG.run(TestNG.java:1000)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.clearcode.testsuite.orderProduct@1f7030a6</td></tr>
 </table><p>
 </body>
 </html>

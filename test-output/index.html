@@ -38,7 +38,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-Suite">
-              <span class="suite-name border-passed">Suite</span>
+              <span class="suite-name border-skipped">Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -59,7 +59,7 @@
                 </li>
                 <li>
                   <a href="#" class="navigator-link " panel-name="group-Suite">
-                    <span>0 groups</span>
+                    <span>1 group</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -91,36 +91,36 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">4 methods,   4 passed</span>
+                    <span class="method-stats">4 methods,  4 skipped,  </span>
                   </li>
                   <li>
-                    <span class="method-list-title passed">Passed methods</span>
-                    <span class="show-or-hide-methods passed">
-                      <a href="#" panel-name="suite-Suite" class="hide-methods passed suite-Suite"> (hide)</a> <!-- hide-methods passed suite-Suite -->
-                      <a href="#" panel-name="suite-Suite" class="show-methods passed suite-Suite"> (show)</a> <!-- show-methods passed suite-Suite -->
+                    <span class="method-list-title skipped">Skipped methods</span>
+                    <span class="show-or-hide-methods skipped">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods skipped suite-Suite"> (hide)</a> <!-- hide-methods skipped suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods skipped suite-Suite"> (show)</a> <!-- show-methods skipped suite-Suite -->
                     </span>
-                    <div class="method-list-content passed suite-Suite">
+                    <div class="method-list-content skipped suite-Suite">
                       <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.clearcode.testsuite.AdminModifyOrder" hash-for-method="AddProduct(Test Data 1, 1, Brown T shirt, 4)">AddProduct(Test Data 1, 1, Brown T shirt, 4)</a> <!-- method navigator-link -->
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.clearcode.testsuite.orderProduct" hash-for-method="returnProduct">returnProduct</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.clearcode.testsuite.AdminModifyOrder" hash-for-method="AddProduct(Test Data 3, 3, White Socks, 3)">AddProduct(Test Data 3, 3, White Socks, 3)</a> <!-- method navigator-link -->
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.clearcode.testsuite.orderProduct" hash-for-method="returnProduct">returnProduct</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.clearcode.testsuite.AdminModifyOrder" hash-for-method="AddProduct(Test Data 2, 2, Blazer Girls(II-V), 5)">AddProduct(Test Data 2, 2, Blazer Girls(II-V), 5)</a> <!-- method navigator-link -->
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.clearcode.testsuite.orderProduct" hash-for-method="returnProduct">returnProduct</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.clearcode.testsuite.AdminModifyOrder" hash-for-method="AddProduct(Test Data 4, 4, White Shirt, 2)">AddProduct(Test Data 4, 4, White Shirt, 2)</a> <!-- method navigator-link -->
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.clearcode.testsuite.orderProduct" hash-for-method="returnProduct">returnProduct</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content passed suite-Suite -->
+                    </div> <!-- method-list-content skipped suite-Suite -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -132,46 +132,62 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite" class="panel Suite">
-          <div class="suite-Suite-class-passed">
+          <div class="suite-Suite-class-skipped">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">com.clearcode.testsuite.AdminModifyOrder</span>
+              <img src="skipped.png"/>
+              <span class="class-name">com.clearcode.testsuite.orderProduct</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="AddProduct(Test Data 1, 1, Brown T shirt, 4)">
-                  </a> <!-- AddProduct(Test Data 1, 1, Brown T shirt, 4) -->
-                  <span class="method-name">AddProduct</span>
-                  <span class="parameters">(Test Data 1, 1, Brown T shirt, 4)</span>
+                  <a name="returnProduct">
+                  </a> <!-- returnProduct -->
+                  <span class="method-name">returnProduct</span>
+                  <div class="stack-trace">java.lang.NullPointerException
+	at com.clearcode.utils.WebDriverUtils.navigate(WebDriverUtils.java:92)
+	at com.clearcode.testsuite.orderProduct.loginUser(orderProduct.java:30)
+... Removed 24 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="AddProduct(Test Data 3, 3, White Socks, 3)">
-                  </a> <!-- AddProduct(Test Data 3, 3, White Socks, 3) -->
-                  <span class="method-name">AddProduct</span>
-                  <span class="parameters">(Test Data 3, 3, White Socks, 3)</span>
+                  <a name="returnProduct">
+                  </a> <!-- returnProduct -->
+                  <span class="method-name">returnProduct</span>
+                  <div class="stack-trace">java.lang.NullPointerException
+	at com.clearcode.utils.WebDriverUtils.navigate(WebDriverUtils.java:92)
+	at com.clearcode.testsuite.orderProduct.loginUser(orderProduct.java:30)
+... Removed 24 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="AddProduct(Test Data 2, 2, Blazer Girls(II-V), 5)">
-                  </a> <!-- AddProduct(Test Data 2, 2, Blazer Girls(II-V), 5) -->
-                  <span class="method-name">AddProduct</span>
-                  <span class="parameters">(Test Data 2, 2, Blazer Girls(II-V), 5)</span>
+                  <a name="returnProduct">
+                  </a> <!-- returnProduct -->
+                  <span class="method-name">returnProduct</span>
+                  <div class="stack-trace">java.lang.NullPointerException
+	at com.clearcode.utils.WebDriverUtils.navigate(WebDriverUtils.java:92)
+	at com.clearcode.testsuite.orderProduct.loginUser(orderProduct.java:30)
+... Removed 24 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="AddProduct(Test Data 4, 4, White Shirt, 2)">
-                  </a> <!-- AddProduct(Test Data 4, 4, White Shirt, 2) -->
-                  <span class="method-name">AddProduct</span>
-                  <span class="parameters">(Test Data 4, 4, White Shirt, 2)</span>
+                  <a name="returnProduct">
+                  </a> <!-- returnProduct -->
+                  <span class="method-name">returnProduct</span>
+                  <div class="stack-trace">java.lang.NullPointerException
+	at com.clearcode.utils.WebDriverUtils.navigate(WebDriverUtils.java:92)
+	at com.clearcode.testsuite.orderProduct.loginUser(orderProduct.java:30)
+... Removed 24 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
+          </div> <!-- suite-Suite-class-skipped -->
         </div> <!-- panel Suite -->
         <div panel-name="test-xml-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
@@ -183,11 +199,16 @@
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Suite&quot;&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Test&quot;&gt;
-    &lt;parameter name=&quot;admin_uname&quot; value=&quot;admin&quot;/&gt;
-    &lt;parameter name=&quot;admin_url&quot; value=&quot;http://uniformm1.upskills.in/admin/&quot;/&gt;
-    &lt;parameter name=&quot;admin_pwd&quot; value=&quot;admin@123&quot;/&gt;
+    &lt;parameter name=&quot;password&quot; value=&quot;muthuselvi&quot;/&gt;
+    &lt;parameter name=&quot;user_url&quot; value=&quot;http://uniformm1.upskills.in/&quot;/&gt;
+    &lt;parameter name=&quot;username&quot; value=&quot;rmselvi16@gmail.com&quot;/&gt;
+    &lt;groups&gt;
+      &lt;run&gt;
+        &lt;include name=&quot;OrderProduct&quot;/&gt;
+      &lt;/run&gt;
+    &lt;/groups&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;com.clearcode.testsuite.AdminModifyOrder&quot;/&gt;
+      &lt;class name=&quot;com.clearcode.testsuite.orderProduct&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Test --&gt;
 &lt;/suite&gt; &lt;!-- Suite --&gt;
@@ -211,6 +232,14 @@
             <span class="header-content">Groups for Suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+            <div class="test-group">
+              <span class="test-group-name">OrderProduct</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">returnProduct</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="times-Suite" class="panel">
@@ -229,26 +258,26 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(4);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'AddProduct')
-data.setCell(0, 2, 'com.clearcode.testsuite.AdminModifyOrder')
-data.setCell(0, 3, 2803);
+data.setCell(0, 1, 'returnProduct')
+data.setCell(0, 2, 'com.clearcode.testsuite.orderProduct')
+data.setCell(0, 3, 1);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'AddProduct')
-data.setCell(1, 2, 'com.clearcode.testsuite.AdminModifyOrder')
-data.setCell(1, 3, 2543);
+data.setCell(1, 1, 'returnProduct')
+data.setCell(1, 2, 'com.clearcode.testsuite.orderProduct')
+data.setCell(1, 3, 0);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'AddProduct')
-data.setCell(2, 2, 'com.clearcode.testsuite.AdminModifyOrder')
-data.setCell(2, 3, 2467);
+data.setCell(2, 1, 'returnProduct')
+data.setCell(2, 2, 'com.clearcode.testsuite.orderProduct')
+data.setCell(2, 3, 0);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'AddProduct')
-data.setCell(3, 2, 'com.clearcode.testsuite.AdminModifyOrder')
-data.setCell(3, 3, 2422);
+data.setCell(3, 1, 'returnProduct')
+data.setCell(3, 2, 'com.clearcode.testsuite.orderProduct')
+data.setCell(3, 3, 0);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 10 seconds</span>
+              <span class="suite-total-time">Total running time: 1 ms</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -259,46 +288,6 @@ return data;
             <span class="header-content">Reporter output for Suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
-            <div class="reporter-method-div">
-              <span class="reporter-method-name">AddProduct(Test Data 1, 1, Brown T shirt, 4)</span>
-              <div class="reporter-method-output-div">
-                <span class="reporter-method-output">STEP18</span>
-                <span class="reporter-method-output">STEP19</span>
-                <span class="reporter-method-output">STEP20</span>
-                <span class="reporter-method-output">STEP21</span>
-                <span class="reporter-method-output">STEP22</span>
-              </div> <!-- reporter-method-output-div -->
-            </div> <!-- reporter-method-div -->
-            <div class="reporter-method-div">
-              <span class="reporter-method-name">AddProduct(Test Data 3, 3, White Socks, 3)</span>
-              <div class="reporter-method-output-div">
-                <span class="reporter-method-output">STEP28</span>
-                <span class="reporter-method-output">STEP29</span>
-                <span class="reporter-method-output">STEP30</span>
-                <span class="reporter-method-output">STEP31</span>
-                <span class="reporter-method-output">STEP32</span>
-              </div> <!-- reporter-method-output-div -->
-            </div> <!-- reporter-method-div -->
-            <div class="reporter-method-div">
-              <span class="reporter-method-name">AddProduct(Test Data 2, 2, Blazer Girls(II-V), 5)</span>
-              <div class="reporter-method-output-div">
-                <span class="reporter-method-output">STEP23</span>
-                <span class="reporter-method-output">STEP24</span>
-                <span class="reporter-method-output">STEP25</span>
-                <span class="reporter-method-output">STEP26</span>
-                <span class="reporter-method-output">STEP27</span>
-              </div> <!-- reporter-method-output-div -->
-            </div> <!-- reporter-method-div -->
-            <div class="reporter-method-div">
-              <span class="reporter-method-name">AddProduct(Test Data 4, 4, White Shirt, 2)</span>
-              <div class="reporter-method-output-div">
-                <span class="reporter-method-output">STEP33</span>
-                <span class="reporter-method-output">STEP34</span>
-                <span class="reporter-method-output">STEP35</span>
-                <span class="reporter-method-output">STEP36</span>
-                <span class="reporter-method-output">STEP37</span>
-              </div> <!-- reporter-method-output-div -->
-            </div> <!-- reporter-method-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Suite" class="panel">
@@ -314,41 +303,29 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">com.clearcode.testsuite.AdminModifyOrder</div> <!-- chronological-class-name -->
-              <div class="configuration-suite before">
-                <span class="method-name">launch</span>
-                <span class="method-start">0 ms</span>
-              </div> <!-- configuration-suite before -->
+              <div class="chronological-class-name">com.clearcode.testsuite.orderProduct</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
-                <span class="method-name">login_admin(http://uniformm1.upskills.in/admin/, admin, admin@123)</span>
-                <span class="method-start">6873 ms</span>
-              </div> <!-- configuration-test before -->
-              <div class="test-method">
-                <span class="method-name">AddProduct(Test Data 1, 1, Brown T shirt, 4)</span>
-                <span class="method-start">26949 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">AddProduct(Test Data 2, 2, Blazer Girls(II-V), 5)</span>
-                <span class="method-start">29755 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">AddProduct(Test Data 3, 3, White Socks, 3)</span>
-                <span class="method-start">32299 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">AddProduct(Test Data 4, 4, White Shirt, 2)</span>
-                <span class="method-start">34723 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-test after">
                 <img src="failed.png">
                 </img>
-                <span class="method-name">saveProductModification</span>
-                <span class="method-start">37193 ms</span>
-              </div> <!-- configuration-test after -->
-              <div class="configuration-suite after">
-                <span class="method-name">close</span>
-                <span class="method-start">41298 ms</span>
-              </div> <!-- configuration-suite after -->
+                <span class="method-name">loginUser(http://uniformm1.upskills.in/, rmselvi16@gmail.com, muthuselvi)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="test-method">
+                <span class="method-name">returnProduct</span>
+                <span class="method-start">367 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">returnProduct</span>
+                <span class="method-start">374 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">returnProduct</span>
+                <span class="method-start">383 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">returnProduct</span>
+                <span class="method-start">394 ms</span>
+              </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->

@@ -24,8 +24,10 @@ public class orderProduct extends TestSetup{
 	
 	//@Test(dataProvider ="loginUser", dataProviderClass = LoginData.class,groups = {"OrderCancellation"},priority=1)
 	@BeforeTest
-	@Parameters({"username","password"})
-	public void loginUser(String username, String password) {
+	@Parameters({"user_url","username","password"})
+	public void loginUser(String user_url,String username, String password) {
+		System.out.println(user_url);
+		wdu.navigate(user_url);
 		Boolean logo = wdu.verifyElementOnPage(HomePage.title_logo);
 		if(logo) {
 			ATUReports.add("Verify Uniform title logo",HomePage.title_logo.toString(), LogAs.PASSED, new CaptureScreen(
