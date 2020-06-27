@@ -8,35 +8,14 @@
 <body>
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
-<tr><th colspan="7">Command line suite</th></tr>
-<tr><td><a href="#t0">Command line test</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">20,920</td><td></td><td></td></tr>
+<tr><th colspan="7">Suite</th></tr>
+<tr><td><a href="#t0">Test</a></td><td class="num">4</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">87,085</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Command line suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Command line test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.clearcode.testsuite.TestSuite1</td><td><a href="#m0">searchPatient</a></td><td rowspan="1">1591515744159</td><td rowspan="1">5394</td></tr><tr><th colspan="4">Command line test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com.clearcode.testsuite.TestSuite2</td><td><a href="#m1">test3</a></td><td rowspan="1">1591515755487</td><td rowspan="1">6</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="4">com.clearcode.testsuite.orderProduct</td><td><a href="#m0">returnProduct</a></td><td rowspan="4">1593162507575</td><td rowspan="4">16130</td></tr><tr class="passedeven"><td><a href="#m1">returnProduct</a></td></tr><tr class="passedeven"><td><a href="#m2">returnProduct</a></td></tr><tr class="passedeven"><td><a href="#m3">returnProduct</a></td></tr></tbody>
 </table>
-<h2>Command line test</h2><h3 id="m0">com.clearcode.testsuite.TestSuite1#searchPatient</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th></tr><tr class="param stripe"><td>admin</td><td>pass</td><td>Mr.</td><td>Ramanathan</td><td>Natarajan</td></tr><tr><th colspan="5">Exception</th></tr><tr><td colspan="5"><div class="stacktrace">org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=83.0.4103.61)
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;Natarajans-MacBook-Pro.local&apos;, ip: &apos;fe80:0:0:0:a9:4f4c:c16f:a071%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.15.5&apos;, java.version: &apos;1.8.0_221&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.61, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: /var/folders/3h/cbnyx6rs07v...}, goog:chromeOptions: {debuggerAddress: localhost:58040}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: 3838ce31ae39c37fdc5a27ec129f66ea
-*** Element info: {Using=tag name, value=frame}
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:353)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementsByTagName(RemoteWebDriver.java:400)
-	at org.openqa.selenium.By$ByTagName.findElements(By.java:312)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:311)
-	at com.clearcode.utils.WebDriverUtils.find(WebDriverUtils.java:214)
-	at com.clearcode.utils.WebDriverUtils.type(WebDriverUtils.java:100)
-	at com.clearcode.testsuite.TestSuite1.searchPatient(TestSuite1.java:30)
-	at java.util.ArrayList.forEach(ArrayList.java:1257)
-... Removed 41 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">com.clearcode.testsuite.TestSuite2#test3</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Test</h2><h3 id="m0">com.clearcode.testsuite.orderProduct#returnProduct</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th></tr><tr class="param stripe"><td>Test Data 3</td><td>3</td><td>Order Error</td><td>No</td><td>wrong product</td></tr><tr><th colspan="5">Messages</th></tr><tr><td colspan="5"><div class="messages">STEP55<br/>STEP56<br/>STEP57<br/>STEP58<br/>STEP59<br/>STEP60<br/>STEP61<br/>STEP62<br/>STEP63<br/>STEP64<br/>STEP65<br/>STEP66<br/>STEP67<br/>STEP68<br/>STEP69<br/>STEP70<br/>STEP71<br/>STEP72<br/>STEP73<br/>STEP74</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">com.clearcode.testsuite.orderProduct#returnProduct</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th></tr><tr class="param stripe"><td>Test Data 4</td><td>4</td><td>Received Wrong Item</td><td>No</td><td>not my item</td></tr><tr><th colspan="5">Messages</th></tr><tr><td colspan="5"><div class="messages">STEP75<br/>STEP76<br/>STEP77<br/>STEP78<br/>STEP79<br/>STEP80<br/>STEP81<br/>STEP82<br/>STEP83<br/>STEP84<br/>STEP85<br/>STEP86<br/>STEP87<br/>STEP88<br/>STEP89<br/>STEP90<br/>STEP91<br/>STEP92<br/>STEP93<br/>STEP94</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">com.clearcode.testsuite.orderProduct#returnProduct</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th></tr><tr class="param stripe"><td>Test Data 2</td><td>2</td><td>Dead On Arrival</td><td>Yes</td><td>product is not working</td></tr><tr><th colspan="5">Messages</th></tr><tr><td colspan="5"><div class="messages">STEP35<br/>STEP36<br/>STEP37<br/>STEP38<br/>STEP39<br/>STEP40<br/>STEP41<br/>STEP42<br/>STEP43<br/>STEP44<br/>STEP45<br/>STEP46<br/>STEP47<br/>STEP48<br/>STEP49<br/>STEP50<br/>STEP51<br/>STEP52<br/>STEP53<br/>STEP54</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">com.clearcode.testsuite.orderProduct#returnProduct</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th></tr><tr class="param stripe"><td>Test Data 1</td><td>1</td><td>Faulty, please supply details</td><td>Yes</td><td>product is faulty</td></tr><tr><th colspan="5">Messages</th></tr><tr><td colspan="5"><div class="messages">STEP15<br/>STEP16<br/>STEP17<br/>STEP18<br/>STEP19<br/>STEP20<br/>STEP21<br/>STEP22<br/>STEP23<br/>STEP24<br/>STEP25<br/>STEP26<br/>STEP27<br/>STEP28<br/>STEP29<br/>STEP30<br/>STEP31<br/>STEP32<br/>STEP33<br/>STEP34</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>
